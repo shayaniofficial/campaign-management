@@ -1,0 +1,18 @@
+#profile_pic
+{
+    position: static;
+    border-radius: 50%;
+    right: 100px;
+}
+
+.main-container
+{
+    text-align: center;
+}
+
+body
+{
+    background-image: url("images/s1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

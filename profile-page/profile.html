@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <style>
+            #bggrad1
+            {
+                height: fit-content;
+                background: rgb(13, 246, 169);
+                background-image: linear-gradient(toright, rgb(255, 245, 98), rgb(72, 249, 255));
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container">
+        <img id="profile_pic" src="images/demo.jpg" alt="profile_pic" style="width: 200px;">
+            <p id="profile-tab-1"><b>Profile Information</b></p>
+            <p>Name : <b id="name" contenteditable="false">Shayani Das</b></p>
+            <p>E-Mail ID : <b id ="email" contenteditable="false">shayanidas773@gmail.com</b></p>
+            <p><b>Work experience</b></p>
+
+            <button id="add-1" style="visibility: hidden;">Add new record</button>
+
+            <p><b>Projects</b></p>
+
+            <button id="add-2"  style="visibility: hidden;">Add new record</button>
+
+            <p><b>Extra Curriculars</b></p>
+
+            <button id="add-3"  style="visibility: hidden;">Add new record</button>
+
+            <p><b>Area of Interest</b></p>
+
+            <button id="add-4"  style="visibility: hidden;">Add new record</button>
+
+            <p><b>Report of interest (please upload attachments)</b></p>
+            <form>
+                <input type="file" id="myfile" name="filename" disabled="true">
+                <input id="filesubmit" type="submit" disabled="true">
+            </form>
+
+            <br><br>
+            <textarea name="Comments" id="comment" placeholder="Write a comment" style="align-self: center; width: 180px;" disabled="true"></textarea>
+            <br><br><button id="btn1" onclick="makeContentEditable()">Update Profile</button>
+            <button id="btn2" onclick="makeFinal()" disabled = "false">Submit</button>
+            <br><br><br>
+            
+        </div>
+    </body>
+</html>
