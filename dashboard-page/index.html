@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+     <title>Document</title>
+<style>
+  ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(76, 151, 80);
+}
+
+  #navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(25, 7, 68,0.7);
+    height: 67px;
+    z-index:100;
+}
+#home h1{
+  font-size:50px;
+  font-family: 'Fredoka', sans-serif !important;
+}
+#home p{
+  font-size:30px;
+  font-family: 'Fredoka', sans-serif;
+}
+#navbar ul{
+    display: flex;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 120px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('images/hmpg.png') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.6;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    z-index: 2;
+}
+
+#home p{
+    color:rgba(31, 27, 27, 0.75);
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+font-family: 'Bree Serif', serif;
+}
+.h-primary center{
+    padding-left: 20px;
+}
+.img
+{
+ opacity: 0.7;
+ height: 100vh;
+}
+.card-body{
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(0,0,0,0.6);
+  color: #f2f2f2;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.stories{
+  padding: 30px;
+  background-color: #708090;
+}
+</style>
+
+
+</head>
+<body>
+  <nav id="navbar">
+    <ul> 
+      <li class="item"><a href="../home-page/index.html">Home</a></li>
+      <li class="item"><a href="../profile-page/profile.html">Profile</a></li>
+      <li class="item"><a href="../aboutus-page/aboutus.html">About us</a></li>
+      <li class="item"><a href="dashboard.html">Dashboard</a></li>
+      <li class="item"><a href="../signin-page/signin.html">Log In/Sign UP</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1 class="h-primary">Campaign Management Platform for Women</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+    
+</section>
+<section class="stories">
+  <h1>SUCCESS STORIES</h1>
+<br>
+<br>
+<div class="card-deck"style="background-color:#708090">
+  <div class="card">
+    <div><img class="card-img-top" src="images/Ashwani-Asokana.jpg" alt="Card image cap"></div>
+    <div class="card-body">
+      <h2 class="card-title">Ashwani Asokana: Founder, Mad Street Den.</h2><br>
+      <h4 class="card-text">Ashwini co-founded a cloud-based platform Mad Street Den with her husband Anand Chandrasekaran. She has experience leading 
+        the mobile innovation team at Intel’s Interaction and Experience Research Lab in Silicon Valley. </h4><br>
+          <a href="https://www.smartbusinessbox.in/women-entrepreneurs-in-india/"><h4 >For more stories</h4></a>
+    </div>
+  </div>
+  <div class="card">
+    <div><img class="card-img-top" src="images/express.jpg" alt="Card image cap"></div>
+    <div class="card-body">
+      <h2 class="card-title">Basudha Shrivastav: ExpressEarth Digital Services
+      </h2>
+      <br>
+      <h4 class="card-text">Basudha Shrivastav co-founded Expres Earth Digital services, a travel agency that takes care of all your travel needs, in 2015.
+         Her co-found Himanshu Narula was also her schoolmate. Both of them were interested in starting a venture in travel.  </h4><br>
+      <a href="https://www.smartbusinessbox.in/women-entrepreneurs-in-india/"><h4 >For more stories</h4></a>
+    </div>
+  </div>
+  <div class="card">
+    <div><img class="card-img-top" src="images/byjus.jpg" alt="Card image cap"></div>
+    <div class="card-body">
+      <h2 class="card-title"> Divya Gokulnath: Co-founder BYJU’S</h2><br>
+      <h4 class="card-text">Divya co-founded Byju’s an educational platform to help students learn better. She completed her engineering
+         degree from RV College and was preparing for her GRE to continue her studies abroad. 
+        
+      </h4>
+      <br>
+      <a href="https://www.smartbusinessbox.in/women-entrepreneurs-in-india/"><h4 >For more stories</h4></a>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+</body>
+</html>
